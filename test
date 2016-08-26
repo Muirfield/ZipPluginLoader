@@ -1,0 +1,25 @@
+#!/bin/sh
+#
+. "$(dirname "$(readlink -f "$0")")/libcommon/utils/init.sh"
+. $utlib/pm.sh
+. $utlib/unitest.sh
+
+trap 'exit $retcode' EXIT
+
+[ ! -f plugin.yml ] && fatal "No plugin.yml"
+[ -f README.md ] && $gd3tool gen -w src
+
+$mkver src
+phplint src || fatal "Failed lint"
+
+install_pocketmine
+testgroup="$(default_tests t "$@")"
+[ -z "$testgroup" ] && exit
+
+pm_plugins
+$mkplugin -o $MPDIR/plugins libcommon/
+$mkplugin -o $MPDIR/plugins .
+
+runtests $testgroup
+
+show_results

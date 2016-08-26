@@ -1,0 +1,8 @@
+#
+# Check if MW loaded.  We assume MW is in the attached zip...
+#
+@ $cmdmap = $server->getCommandMap()
+@ $oldcmd = $cmdmap->getCommand("mw")
+@ if (!$oldcmd) return
+
+mw help
