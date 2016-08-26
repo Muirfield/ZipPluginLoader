@@ -3,6 +3,9 @@
 
 <!-- end-include -->
 <img id="ZipPlugin-icon.png" src="https://raw.githubusercontent.com/Muirfield/ZipPluginLoader/master/media/ZipPlugin-icon.png" style="width:64px;height:64px" width="64" height="64"/>
+<!-- php: $v_forum_thread = "http://forums.pocketmine.net/threads/zippluginloader.8924"; -->
+<!-- php: $copyright="2016"; -->
+<!-- meta: Categories = Developer Tools -->
 <!-- template: header.md -->
 
 # ZipPluginLoader
@@ -11,13 +14,11 @@
 - PocketMine-MP API version: 2.0.0
 - DependencyPlugins: 
 - OptionalPlugins: 
-- Categories: N/A
+- Categories: Developer Tools 
 - WebSite: https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader
 
 
 <!-- end-include -->
-<!-- php: $v_forum_thread = "http://forums.pocketmine.net/threads/zippluginloader.8924"; -->
-<!-- php: $copyright="2016"; -->
 
 <!-- template: prologue.md -->
 **DO NOT POST QUESTIONS/BUG-REPORTS/REQUESTS IN THE REVIEWS**
