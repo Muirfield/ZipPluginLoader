@@ -1,21 +1,25 @@
-<img src="https://raw.githubusercontent.com/alejandroliu/pocketmine-plugins/master/Media/ZipPlugin-icon.png" style="width:64px;height:64px" width="64" height="64"/>
+<!-- template: startup.md -->
+
+
+<!-- end-include -->
+<img id="ZipPlugin-icon.png" src="https://raw.githubusercontent.com/Muirfield/ZipPluginLoader/master/media/ZipPlugin-icon.png" style="width:64px;height:64px" width="64" height="64"/>
+<!-- template: header.md -->
 
 # ZipPluginLoader
 
-* Summary: Load Zip packed plugins
-* Dependency Plugins: n/a
-* PocketMine-MP version: 1.4 (API:1.10.0)
-* DependencyPlugins: -
-* OptionalPlugins: -
-* Categories: Developer Tools
-* Plugin Access: Manages plugins
-* WebSite: https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader
+- Summary: Load Zip packed plugins
+- PocketMine-MP API version: 2.0.0
+- DependencyPlugins: 
+- OptionalPlugins: 
+- Categories: N/A
+- WebSite: https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader
 
-## Overview
 
+<!-- end-include -->
 <!-- php: $v_forum_thread = "http://forums.pocketmine.net/threads/zippluginloader.8924"; -->
-<!-- template: prologue.md -->
+<!-- php: $copyright="2016"; -->
 
+<!-- template: prologue.md -->
 **DO NOT POST QUESTIONS/BUG-REPORTS/REQUESTS IN THE REVIEWS**
 
 It is difficult to carry a conversation in the reviews.  If you
@@ -23,24 +27,41 @@ have a question/bug-report/request please use the
 [Thread](http://forums.pocketmine.net/threads/zippluginloader.8924) for
 that.  You are more likely to get a response and help that way.
 
-_NOTE:_
-
-This documentation was last updated for version **1.1.3**.
+_NOTE:_ This documentation was last updated for version **1.2.1**.
 
 Please go to
 [github](https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader)
 for the most up-to-date documentation.
 
-You can also download this plugin from this [page](https://github.com/alejandroliu/pocketmine-plugins/releases/tag/ZipPluginLoader-1.1.3).
+You can also download this plugin from this [page](https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader/releases).
+Usually there are two types of releases, a _normal_ release (no suffix) and a _lite_
+release with the suffix `-lite`.  The _lite_ release has a dependancy on 
+the [libcommon](https://github.com/Muirfield/libcommon/releases) plugin, where as
+the _normal_ release does not.  You only need to download **one**.
 
-<!-- template-end -->
+
+When clonning this repository make sure you use the `--recursive` option:
+
+    git clone --recursive https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader.git
+    
+Otherwise you need to initialize sub-modules manually:
+
+    git clone https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader.git
+    cd ZipPluginLoader
+    git submodule update --init --recursive
+
+
+
+
+
+<!-- end-include -->
 
 **NOTE: This is unlike _DevTools_, as it is focus on only loading Zip files
 instead of folders like _DevTools_.**  You still need _DevTools_ if
 you actually want to do Plugin Development and to create _phar_ file
 plugins.
 
-This plugin Let's you load plugins from zip files.  This is
+This plugin let's you load plugins from zip files.  This is
 particularly handy when trying out source plugins from
 [GitHub](http://github.com) as you can click the **Download ZIP**
 button, as you can then place the zip file in the plugins folder.
@@ -64,6 +85,7 @@ loaded.
 
 ## Changes
 
+* 1.2.1: Updated to newest API
 * 1.1.3: Bug-fix
   - Fixed bug reported by (@Taha_The_Hacker)
 * 1.1.2: Minor update
@@ -75,10 +97,11 @@ loaded.
   * Supports for multiple plugins in a zip file.
 * 1.0.0: First release
 
-## Copyright
+<!-- template: license/gpl2.md -->
+# Copyright
 
     ZipPluginLoader
-    Copyright (C) 2015 Alejandro Liu
+    Copyright (C) 2016 Alejandro Liu
     All Rights Reserved.
 
     This program is free software: you can redistribute it and/or modify
@@ -93,4 +116,7 @@ loaded.
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+<!-- end-include -->
 
