@@ -15,7 +15,7 @@
 - DependencyPlugins: 
 - OptionalPlugins: 
 - Categories: Developer Tools 
-- WebSite: https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader
+- WebSite: https://github.com/Muirfield/ZipPluginLoader
 
 
 <!-- end-include -->
@@ -31,10 +31,10 @@ that.  You are more likely to get a response and help that way.
 _NOTE:_ This documentation was last updated for version **1.2.1**.
 
 Please go to
-[github](https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader)
+[github](https://github.com/Muirfield/ZipPluginLoader)
 for the most up-to-date documentation.
 
-You can also download this plugin from this [page](https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader/releases).
+You can also download this plugin from this [page](https://github.com/Muirfield/ZipPluginLoader/releases).
 Usually there are two types of releases, a _normal_ release (no suffix) and a _lite_
 release with the suffix `-lite`.  The _lite_ release has a dependancy on 
 the [libcommon](https://github.com/Muirfield/libcommon/releases) plugin, where as
@@ -43,11 +43,11 @@ the _normal_ release does not.  You only need to download **one**.
 
 When clonning this repository make sure you use the `--recursive` option:
 
-    git clone --recursive https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader.git
+    git clone --recursive https://github.com/Muirfield/ZipPluginLoader.git
     
 Otherwise you need to initialize sub-modules manually:
 
-    git clone https://github.com/alejandroliu/pocketmine-plugins/tree/master/ZipPluginLoader.git
+    git clone https://github.com/Muirfield/ZipPluginLoader.git
     cd ZipPluginLoader
     git submodule update --init --recursive
 
