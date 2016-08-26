@@ -1,0 +1,18 @@
+language: php
+php:
+- '7.0'
+script:
+- bash test
+sudo: required
+dist: trusty
+before_deploy:
+- php libcommon/mkplugin.php -o . .
+deploy:
+  provider: releases
+  file_glob: true
+  api_key:
+    secure: ON4FounnVGy5qx7vvpG+cpb/Y7/E/f/G60IHiBTHtafyv6P4BqG2oCE2svU/pyTOGvDw3XsgfL0mGRJPzTbXPFY/Lzk1XOZ0skRKGkk8usbMY52mAR2+kwDj1YGKKVF8IE3dCpNKpLKOB/vOwDod1rzmU2DdswWs93kTNpRRy6fwpPSjcfYLmAtXLwpeS4h+oiTNwT+zOTGVfoC284QvPll+WUEC4pUhk+gK+adjE5280LihriWN3EuQw8Cs00n51NXmASiMtz9BnrfpuX5MzYWYvMCUtfjwekX9yAXsy3SWNFdj7Ax6LYCdlqE1IO+vvPVmNX0fJTny1NflfA7Lhxgce42bKTOjAXx2dAF1nXDJKYYj+U9oCdu7qJNBnN3u57tl68ZRCE+vSjmzYD1CrT+TneVKBhizERm0MsL/YZ9C/+Q8MygsI6HWFIrzmAFPfoOjkqt9amGZmP6YHknd8mYVJN2MvjMUeNh0e5ZYV5ek9UA/V6HG7lmzSUP5UCOtXlanv1KaRIUUBuMOP8zMyYbq2EFKRkvjNUB/YQH8KURMutPcyk4ikVFAV35bwmt4zSTmmazoHrJdMPxewoFREzTdOko9FZ5rqK7oXH6y3sU0IyM4fBM6W62HbmKTXajRoZhjwhEggoCsrFegom9iK2K4lPM22K2Obh23Q9Zt8VU=
+  file: ZipPluginLoader_v*.phar
+  on:
+    repo: Muirfield/ZipPluginLoader
+    tags: true
