@@ -6,6 +6,7 @@
 <!-- php: $v_forum_thread = "http://forums.pocketmine.net/threads/zippluginloader.8924"; -->
 <!-- php: $copyright="2016"; -->
 <!-- meta: Categories = Developer Tools -->
+<!-- php: $v_skip_lite_explanation = 1; -->
 <!-- template: header.md -->
 
 # ZipPluginLoader
@@ -35,11 +36,6 @@ Please go to
 for the most up-to-date documentation.
 
 You can also download this plugin from this [page](https://github.com/Muirfield/ZipPluginLoader/releases).
-Usually there are two types of releases, a _normal_ release (no suffix) and a _lite_
-release with the suffix `-lite`.  The _lite_ release has a dependancy on 
-the [libcommon](https://github.com/Muirfield/libcommon/releases) plugin, where as
-the _normal_ release does not.  You only need to download **one**.
-
 
 When clonning this repository make sure you use the `--recursive` option:
 
